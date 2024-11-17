@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:beige;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+    flex: 1;
+    background-color: rgb(219, 218, 214)
+}
+.imagen{
+    margin: 0 auto;
+    width: 10%;
+    height: 100%;
+}
+h1{
+    color: rgb(23, 100, 100);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    margin-left: 15%;
+}
+.lista{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 2%;
+    padding-right: 5%;  
+}
+    nav ul{
+        list-style: none;
+    }
+        nav ul li{
+        float: left;
+        flex-wrap: wrap;
+        padding: 10px;
+        margin-right: 20px;
+        margin-top: 20px;
+        }
+        li a{
+            padding-inline: 5px;
+            text-decoration: none;
+            font-weight: bolder;
+            color: rgb(77, 35, 35);
+            background-color: rgb(152, 172, 172);
+            border-radius: 10px;
+        }
+    nav ul li a:hover{
+        background-color: black;
+        color: aqua;
+    }
+main{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex: 1;
+}
+.comentario{
+    display: flexbox;
+    flex-wrap: wrap;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    padding-bottom: 30px;
+    font-weight: bolder;
+    color: rgb(12, 145, 145);
+}
+.subtitulo{
+    display: flex;
+    flex-wrap: wrap;
+    color: rgb(92, 92, 84);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    padding-top: 15px;
+    margin: 0%;
+}
+section{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex: 1;
+    background-color: rgb(230, 230, 234)
+}
+article{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 100%;
+    padding-top: 10px;
+}
+aside{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 20%;
+    height: 100%;
+    margin: 8%;    
+    a{
+        margin: 20px;
+        text-decoration: none;
+        font-weight: bolder;
+    }
+}
+.img1{
+    width: 300px;
+    height: 300px;
+}
+.img2{
+    width: 300px;
+    height: 300px;
+}
+
+/*galeria*/
+
+img{
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+}
+.galeria{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contacto{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    height: 100%;
+    margin: 5%;
+}
+h2{
+    padding: 2%;
+    margin: 4%;
+    color: blueviolet;
+    text-align: center;
+
+}
+footer{
+    display: flex;
+    justify-content:center;
+    text-align:center;
+    background-color: black;
+    color: aquamarine;
+    margin: 0%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(227, 236, 227);
+    text-align: center;
+    margin-top: 4%;
+    margin-bottom: 5%;
+    padding: 2%;
+    border-radius: 8px;
+}
+.caja{
+    display: flex;
+    justify-content: center;
+    margin: 5px 0px;
+}
+.caja label{
+    flex-basis: 80px;
+}
+.caja input{
+    flex: 1;
+    padding: 5px;
+}
+button{
+    background-color: rgb(179, 154, 203);
+    color: #fff;
+    border: none;
+    padding: 6px;
+    margin-top: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+button:hover{
+background-color: rgb(119, 113, 124);
+}
+
+@media (max-width: 550px){
+nav ul{
+    flex-direction: column;
+    align-items: center;
+}
+nav li{
+    margin: 5px 0;
+}
+main{
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+header{
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+section{
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+main .galeria{
+    padding: 15px;
+}
+}
+
